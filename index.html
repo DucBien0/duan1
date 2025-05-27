@@ -131,8 +131,20 @@
 
         <!-- dich vu-->
 
-        <div class="container-fluid">
-          <div class="row justify-content-center pt-2">
+        <div class="container">
+          <!-- Nút gấp gọn/hiện dịch vụ -->
+          <button
+            class="btn btn-warning d-md-none mb-2 container"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#featureCollapse"
+          >
+            Show Services
+          </button>
+          <div
+            class="row justify-content-center pt-2 collapse d-md-flex"
+            id="featureCollapse"
+          >
             <div class="col-lg-4 col-md-6 mb-3 d-flex">
               <div class="feature-card w-100">
                 <div class="feature-flex">
@@ -1571,6 +1583,154 @@
         </div>
       </div>
     </div>
+
+    <!-- Food news section - responsive for PC, iPad, mobile -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section1-header">
+            <span class="label">Popular dishes</span><span class="line"></span>
+            <div class="title">Popular dishes</div>
+          </div>
+          <div
+            class="card flex-row flex-wrap align-items-center"
+            style="border: none"
+          >
+            <div class="col-12 col-md-4 mb-3 mb-md-0">
+              <div style="position: relative; width: 100%">
+                <img
+                  src="image/Group 10.png"
+                  alt="Food news"
+                  class="img-fluid rounded-3 w-100"
+                  style="object-fit: cover; min-height: 180px"
+                />
+                <button
+                  style="
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    border: none;
+                    background: rgba(255, 255, 255, 0.7);
+                    border-radius: 50%;
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                  "
+                >
+                  <i class="fa fa-play fa-lg" style="color: orange"></i>
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-8">
+              <div class="fw-bold fs-5 mb-2">
+                Let's make crispy fried chicken thighs with DBT kitchen!
+              </div>
+              <ol class="mb-0" style="font-size: 16px">
+                <li>Marinate chicken thighs with spices</li>
+                <li>Dip chicken thighs in flour and fry until crispy.</li>
+                <li>
+                  Put the chicken coated with flour into the pan and fry until
+                  it is golden brown and fragrant, then remove and drain.
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- kết thúc -->
+
+    <footer class="footer-dbt bg-light mt-4">
+      <div class="container py-3">
+        <div class="footer-top-row">
+          <div class="footer-logo-group">
+            <img
+              src="image/Group 7.png"
+              alt="logo DBT"
+              width="48"
+              class="me-2"
+            />
+            <div class="fw-bold" style="font-size: 15px">
+              Selling snack<br />DBT
+            </div>
+          </div>
+          <div class="footer-social-group">
+            <a href="#" class="footer-social"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" class="footer-social"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="footer-social"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="row align-items-start">
+          <!-- Contact ngang hàng với Taiyo -->
+          <div class="col-12 col-md-3 mb-3 mb-md-0">
+            <div class="mt-2 mb-1 fw-bold">Contact</div>
+            <div class="footer-contact">
+              <div>
+                <i class="fa fa-envelope text-warning me-2"></i
+                >snackdbt@gmail.com
+              </div>
+              <div>
+                <i class="fa fa-phone text-warning me-2"></i>+84966866868
+              </div>
+              <div>
+                <i class="fa fa-headset text-warning me-2"></i>Hotline:
+                +19001900
+              </div>
+            </div>
+          </div>
+          <!-- Taiyo, Nichikon, Nichikon -->
+          <div class="col-12 col-md-9">
+            <div class="row">
+              <div class="col-12 col-sm-4 mb-2 mb-sm-0">
+                <div class="footer-title">
+                  <i
+                    class="fa fa-circle text-warning me-1"
+                    style="font-size: 7px"
+                  ></i>
+                  Taiyo Cabletyce
+                </div>
+                <div class="footer-list">
+                  Robot cables<br />Equipment cables<br />General-purpose
+                  cables<br />Others
+                </div>
+              </div>
+              <div class="col-12 col-sm-4 mb-2 mb-sm-0">
+                <div class="footer-title">
+                  <i
+                    class="fa fa-circle text-warning me-1"
+                    style="font-size: 7px"
+                  ></i>
+                  Nichikon
+                </div>
+                <div class="footer-list">
+                  Robot cables<br />Equipment cables<br />General-purpose
+                  cables<br />Others
+                </div>
+              </div>
+              <div class="col-12 col-sm-4">
+                <div class="footer-title">
+                  <i
+                    class="fa fa-circle text-warning me-1"
+                    style="font-size: 7px"
+                  ></i>
+                  Nichikon
+                </div>
+                <div class="footer-list">
+                  Robot cables<br />Equipment cables<br />General-purpose
+                  cables<br />Others
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <link
       rel="stylesheet"

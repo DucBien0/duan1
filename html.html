@@ -1,109 +1,66 @@
-<!DOCTYPE html>
-<html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Đăng nhập / Đăng ký</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container mt-5" style="max-width: 500px">
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs mb-3" id="authTab" role="tablist">
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="login-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#login"
-            type="button"
-            role="tab"
-          >
-            Đăng nhập
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="register-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#register"
-            type="button"
-            role="tab"
-          >
-            Đăng ký
-          </button>
-        </li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <!-- Đăng nhập -->
-        <div class="tab-pane fade show active" id="login" role="tabpanel">
-          <form>
-            <div class="mb-3">
-              <label for="loginEmail" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="loginEmail"
-                placeholder="Nhập email"
-              />
+<div class="container-fluid">
+  <!-- Nút gấp gọn/hiện dịch vụ -->
+  <button
+    class="btn btn-warning d-md-none mb-2"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#featureCollapse"
+  >
+    Show Services
+  </button>
+  <div
+    class="row justify-content-center pt-2 collapse d-md-flex"
+    id="featureCollapse"
+  >
+    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+      <div class="feature-card w-100">
+        <div class="feature-flex">
+          <span class="icon-circle">
+            <i class="fas fa-truck"></i>
+          </span>
+          <div>
+            <div class="feature-card-title">SHIPPING 24/7</div>
+            <div class="feature-card-text">
+              Our consulting team is always<br />
+              ready to assist you when you<br />
+              encounter difficulties.
             </div>
-            <div class="mb-3">
-              <label for="loginPassword" class="form-label">Mật khẩu</label>
-              <input
-                type="password"
-                class="form-control"
-                id="loginPassword"
-                placeholder="Nhập mật khẩu"
-              />
-            </div>
-            <button type="submit" class="btn btn-primary w-100">
-              Đăng nhập
-            </button>
-          </form>
-        </div>
-
-        <!-- Đăng ký -->
-        <div class="tab-pane fade" id="register" role="tabpanel">
-          <form>
-            <div class="mb-3">
-              <label for="registerName" class="form-label">Họ tên</label>
-              <input
-                type="text"
-                class="form-control"
-                id="registerName"
-                placeholder="Nhập họ tên"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerEmail" class="form-label">Email</label>
-              <input
-                type="email"
-                class="form-control"
-                id="registerEmail"
-                placeholder="Nhập email"
-              />
-            </div>
-            <div class="mb-3">
-              <label for="registerPassword" class="form-label">Mật khẩu</label>
-              <input
-                type="password"
-                class="form-control"
-                id="registerPassword"
-                placeholder="Nhập mật khẩu"
-              />
-            </div>
-            <button type="submit" class="btn btn-success w-100">Đăng ký</button>
-          </form>
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
-</html>
+    <div class="col-lg-4 col-md-6 mb-3 d-flex">
+      <div class="feature-card w-100">
+        <div class="feature-flex">
+          <span class="icon-circle">
+            <i class="fas fa-comments"></i>
+          </span>
+          <div>
+            <div class="feature-card-title">ONLINE SUPPORT 24/7</div>
+            <div class="feature-card-text">
+              Our consulting team is always<br />
+              ready to assist you when you<br />
+              encounter difficulties.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-12 mb-3 d-flex">
+      <div class="feature-card w-100">
+        <div class="feature-flex">
+          <span class="icon-circle">
+            <i class="fas fa-gift"></i>
+          </span>
+          <div>
+            <div class="feature-card-title">WEEKEND GIFT</div>
+            <div class="feature-card-text">
+              Big promotion, receive gifts<br />
+              every Saturday and Sunday.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

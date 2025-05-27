@@ -1,0 +1,1133 @@
+/* Custom styles to complement Bootstrap */
+body {
+  margin: auto;
+}
+/* Top banner styles */
+.top-banner {
+  background-color: #ff9624;
+  color: #333;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.top-banner a {
+  color: #333;
+  text-decoration: none;
+}
+
+.top-banner a:hover {
+  text-decoration: underline;
+}
+
+/* Logo styles */
+.logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-title {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  color: #333;
+  line-height: 1.2;
+}
+
+.logo-subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  line-height: 1.2;
+}
+
+/* Search button */
+.btn-search {
+  background-color: #ff9624;
+  color: white;
+  border: none;
+  border-radius: 0 25px 25px 0;
+}
+
+.form-control {
+  border-radius: 25px 0 0 25px;
+}
+.btn-search:hover {
+  background-color: #e88720;
+  color: white;
+}
+
+/* User action buttons */
+.action-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.action-button:hover {
+  color: #ff9624;
+}
+
+.action-button i {
+  font-size: 16px;
+}
+
+/* Navigation menu styles */
+.navbar {
+  padding: 0;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  padding: 15px 20px !important;
+  font-size: 14px;
+}
+
+.nav-link.active {
+  color: #ff9624;
+}
+
+.nav-link:hover {
+  color: #ff9624;
+}
+
+.nav-link.active::before {
+  content: "";
+  position: absolute;
+  top: 0; /* 👈 Đặt phía trên */
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #d9d9d9;
+}
+
+.nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: px;
+  background-color: #d9d9d9;
+}
+
+.banner-container {
+  background-color: #d9d9d9;
+  min-height: 500px;
+  margin-top: -1px;
+}
+
+.banner-1 {
+  margin-top: 10px;
+}
+
+.banner {
+  background-color: #ff9624; /* màu nền cam */
+  overflow: hidden;
+  margin-top: 2px;
+}
+
+.banner img {
+  width: 100%; /* ảnh full chiều rộng của khung cha */
+  height: auto; /* giữ tỷ lệ gốc */
+  display: block; /* xóa khoảng trắng dưới ảnh */
+}
+
+.feature-card {
+  background: #fff;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 22px 18px 22px 18px;
+  transition: box-shadow 0.2s;
+}
+
+.feature-card .icon-circle {
+  width: 64px;
+  height: 64px;
+  border: 3px solid #ff9e18;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+  font-size: 2rem;
+  color: #ff9e18;
+  flex-shrink: 0;
+}
+.feature-card-title {
+  color: #ff9e18;
+  font-weight: bold;
+  font-size: 1.11rem;
+  margin-bottom: 0;
+  letter-spacing: 0.5px;
+}
+.feature-card-text {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.feature-flex {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+/* MÓN ĂN 1 */
+.section-header {
+  margin-left: 7px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.section-header .label {
+  color: #fa9905;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+.section-header .line {
+  border-bottom: 2.5px solid #fa9905;
+  width: 85px;
+  margin: 0 0 5px 7px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.section-header .title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #232323;
+  padding-left: 0.5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.carousel-controls-custom {
+  position: absolute;
+  top: 41%;
+  left: -30px;
+  right: -29px;
+  z-index: 2;
+  width: calc(100% + 59px);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.carousel-control-custom {
+  pointer-events: all;
+  width: 36px;
+  height: 36px;
+  background: #fff5e5;
+  border-radius: 50%;
+  box-shadow: 0 2px 7px 1px #fa99053a;
+  border: 1.5px solid #ffeba9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.18s, border-color 0.18s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+.carousel-control-custom:hover {
+  border-color: #fa9905;
+  box-shadow: 0 4px 13px 1px #fa990584;
+}
+.carousel-control-custom i {
+  color: #fa9905;
+  font-size: 1.2rem;
+}
+.carousel-control-prev-custom {
+  left: 0;
+}
+.carousel-control-next-custom {
+  right: 0;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+.carousel-indicators [data-bs-target] {
+  background: #fa9905;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: none;
+  opacity: 0.45;
+  transition: width 0.18s, height 0.18s, opacity 0.18s;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 8px;
+  border-radius: 7px;
+  opacity: 0.97;
+  background: #fa9905;
+}
+.custom-card {
+  border-radius: 13px;
+  box-shadow: 0 2px 16px #fa990520, 0 1.5px 3px #e2e4ec1c;
+  border: 1.5px solid #3c3c3c8f;
+  overflow: hidden;
+  min-height: 350px;
+  background: #fff;
+  transition: box-shadow 0.18s, transform 0.16s, border-color 0.18s;
+}
+.custom-card:hover {
+  box-shadow: 0 8px 34px 1.5px #fa990553, 0 2px 6px #e2e4ec3c;
+  transform: translateY(-3px) scale(1.012);
+  border-color: #ffd898;
+}
+.card-img-top {
+  object-fit: cover;
+  height: 220px;
+  border-bottom: 1px solid #ffe3d0;
+  width: 95%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 9px;
+  border-radius: 10px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 165px;
+}
+.buy-btn {
+  background-color: #fa9905;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0px 9px 0px 9px;
+  font-size: 0.81rem;
+  font-weight: 500;
+  border: none;
+  margin-right: 7px;
+  margin-bottom: 3px;
+  height: 26px;
+  line-height: 19px;
+  letter-spacing: -0.1px;
+  box-shadow: 0 1px 1.5px #ffdfb7;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5px;
+  transition: background 0.18s;
+}
+.buy-btn i {
+  font-size: 0.99rem;
+  margin-left: 2.7px;
+  margin-bottom: 1.6px;
+}
+.buy-btn:hover {
+  background: #ffba36;
+  color: #fff;
+}
+.people-icon {
+  color: #fa9905;
+  font-size: 1.05rem;
+  margin-right: 4px;
+}
+.price {
+  font-weight: 600;
+  font-size: 1.04rem;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+.carousel-item .row {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.carousel-item .col-12 {
+  flex: 0 0 auto; /* Ngăn việc co giãn */
+}
+
+/* MÓN ĂN 2 */
+.section1-header {
+  margin-left: 7px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.section1-header .label {
+  color: #fa9905;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+.section1-header .line {
+  border-bottom: 2.5px solid #fa9905;
+  width: 85px;
+  margin: 0 0 5px 7px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.section1-header .title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #232323;
+  padding-left: 0.5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.carousel1-controls-custom {
+  position: absolute;
+  top: 41%;
+  left: -30px;
+  right: -29px;
+  z-index: 2;
+  width: calc(100% + 59px);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+}
+.carousel1-control-custom {
+  pointer-events: all;
+  width: 36px;
+  height: 36px;
+  background: #fff5e5;
+  border-radius: 50%;
+  box-shadow: 0 2px 7px 1px #fa99053a;
+  border: 1.5px solid #ffeba9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.18s, border-color 0.18s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+.carousel1-control-custom:hover {
+  border-color: #fa9905;
+  box-shadow: 0 4px 13px 1px #fa990584;
+}
+.carousel1-control-custom i {
+  color: #fa9905;
+  font-size: 1.2rem;
+}
+.carousel1-control-prev-custom {
+  left: 0;
+}
+.carousel1-control-next-custom {
+  right: 0;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: -32px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  z-index: 3;
+}
+.carousel-indicators [data-bs-target] {
+  background: #fa9905;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 3px;
+  border: none;
+  opacity: 0.45;
+  transition: width 0.18s, height 0.18s, opacity 0.18s;
+}
+.carousel-indicators .active {
+  width: 17px;
+  height: 8px;
+  border-radius: 7px;
+  opacity: 0.97;
+  background: #fa9905;
+}
+.custom-card {
+  border-radius: 13px;
+  box-shadow: 0 2px 16px #fa990520, 0 1.5px 3px #e2e4ec1c;
+  border: 1.5px solid #3c3c3c8f;
+  overflow: hidden;
+  min-height: 350px;
+  background: #fff;
+  transition: box-shadow 0.18s, transform 0.16s, border-color 0.18s;
+}
+.custom-card:hover {
+  box-shadow: 0 8px 34px 1.5px #fa990553, 0 2px 6px #e2e4ec3c;
+  transform: translateY(-3px) scale(1.012);
+  border-color: #ffd898;
+}
+.card1-img-top {
+  object-fit: cover;
+  height: 230px;
+  border-bottom: 1px solid #ffe3d0;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-radius: 0px;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+}
+.buy-btn {
+  background-color: #fa9905;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0px 9px 0px 9px;
+  font-size: 0.81rem;
+  font-weight: 500;
+  border: none;
+  margin-right: 7px;
+  margin-bottom: 3px;
+  height: 26px;
+  line-height: 19px;
+  letter-spacing: -0.1px;
+  box-shadow: 0 1px 1.5px #ffdfb7;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5px;
+  transition: background 0.18s;
+}
+.buy-btn i {
+  font-size: 0.99rem;
+  margin-left: 2.7px;
+  margin-bottom: 1.6px;
+}
+.buy-btn:hover {
+  background: #ffba36;
+  color: #fff;
+}
+.people-icon {
+  color: #fa9905;
+  font-size: 1.05rem;
+  margin-right: 4px;
+}
+.price {
+  font-weight: 600;
+  font-size: 1.04rem;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+/*banner quang cao */
+.section-box {
+  background: #d9d9d9;
+  margin: 38px auto;
+  padding: 20px 18px 30px 18px;
+}
+.label-hot {
+  background: #ffae1a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+.big-title {
+  font-size: 2rem;
+  color: #294559;
+  font-weight: 700;
+}
+.welcome-para {
+  color: #222;
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+.desc-light {
+  color: #888;
+  font-size: 15px;
+}
+.feature-list {
+  margin: 18px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.feature-item {
+  background: #fff;
+  border-radius: 22px;
+  border: 1.5px solid #e8e8e8;
+  color: #2e2e2e;
+  padding: 4px 16px 4px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  font-weight: 500;
+  box-shadow: 0 1px 6px #eee3;
+}
+.feature-item i {
+  color: #fd5444;
+}
+.action-btns {
+  display: flex;
+  gap: 18px;
+  margin-top: 5px;
+}
+.btn-eval {
+  background: #ffa500;
+  color: #fff;
+  border-radius: 10px;
+  padding: 7px 26px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 1px 6px #ffd88a48;
+}
+.btn-learn {
+  border: 1.4px solid #ffa500;
+  color: #ffa500;
+  border-radius: 10px;
+  padding: 7px 21px;
+  background: #fff;
+  font-weight: 500;
+}
+.img-wrap-box {
+  background: #ff9900;
+  border-radius: 13px;
+  padding: 18px 13px 18px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.img-inner-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 8px;
+  width: 100%;
+  aspect-ratio: 220/170;
+  max-width: 290px;
+  min-width: 160px;
+  position: relative;
+}
+.img-logo {
+  background: #fff5e1;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: #de9000;
+  flex-direction: column;
+  padding: 2px 3px 0 3px;
+}
+.img-restaurant {
+  background: #fff;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* món ăn 3 */
+.section1-header {
+  margin-left: 7px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.section1-header .label {
+  color: #fa9905;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+.section1-header .line {
+  border-bottom: 2.5px solid #fa9905;
+  width: 85px;
+  margin: 0 0 5px 7px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.section1-header .title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #232323;
+  padding-left: 0.5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.dish-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 14px;
+  padding: 0.5rem 0.5rem 0.7rem 0.5rem;
+  margin-bottom: 1.2rem;
+  background: #fff;
+  box-shadow: 0 2px 6px 0 #0001;
+  transition: box-shadow 0.15s;
+  height: 93%;
+  display: flex;
+  flex-direction: column;
+}
+.dish-card:hover {
+  box-shadow: 0 4px 24px #0003;
+}
+.dish-img {
+  border-radius: 10px;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.dish-info {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.dish-price {
+  font-size: 0.97rem;
+  color: #333;
+  margin-right: 8px;
+}
+.dish-likes {
+  font-size: 0.92rem;
+  color: #d17711;
+}
+.buy-btn {
+  padding: 0.2rem 0.8rem;
+  font-size: 0.95rem;
+  background: #f4a340;
+  color: #fff;
+  border-radius: 12px;
+  border: none;
+  margin-top: 5px;
+  transition: background 0.15s;
+}
+.buy-btn:hover {
+  background: #c2780a;
+}
+.see-more-btn {
+  margin-top: 1.7rem;
+  border-radius: 14px;
+  border: 1px solid #bbb;
+  background: #fff;
+  color: #333;
+  padding: 0.35rem 1.5rem;
+  font-size: 1rem;
+}
+
+/*mon trang mieng banh va nuoc */
+
+.cake-section {
+  border-radius: 12px;
+  max-width: 1140px;
+  margin: 30px auto;
+}
+.section3-header {
+  margin-left: 5px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.section3-header .label {
+  color: #fa9905;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+.section3-header .line {
+  border-bottom: 2.5px solid #fa9905;
+  width: 85px;
+  margin: 0 0 5px 7px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.section3-header .title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #232323;
+  padding-left: 0.5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.cake-card {
+  border: 1.5px solid #d0d0d0;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: box-shadow 0.1s;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.cake-card:hover {
+  box-shadow: 0 2px 8px rgba(255, 153, 51, 0.15);
+}
+.cake-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.cake-info {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cake-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212121;
+  margin-top: 2px;
+}
+.buy-btn-1 {
+  background-color: #fa9905;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0px 9px 0px 9px;
+  font-size: 0.81rem;
+  font-weight: 500;
+  border: none;
+  margin-right: 7px;
+  margin-bottom: 3px;
+  height: 26px;
+  line-height: 19px;
+  letter-spacing: -0.1px;
+  box-shadow: 0 1px 1.5px #ffdfb7;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5px;
+  transition: background 0.18s;
+}
+.buy-btn-1:hover {
+  background: #ec8800;
+  color: #fff;
+}
+.see-more-btn {
+  border-radius: 22px;
+  border: 1.5px solid #444;
+  padding: 3px 25px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  margin-top: 12px;
+  transition: background 0.2s, color 0.2s;
+}
+.see-more-btn:hover {
+  background: #f3f3f3;
+}
+
+/*do trang mieng nươc uống*/
+
+.cake-section4 {
+  border-radius: 12px;
+  max-width: 1140px;
+  margin: 30px auto;
+}
+.section4-header {
+  margin-left: 5px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+.section4-header .label {
+  color: #fa9905;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+.section4-header .line {
+  border-bottom: 2.5px solid #fa9905;
+  width: 85px;
+  margin: 0 0 5px 7px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.section4-header .title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #232323;
+  padding-left: 0.5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+.cake-card {
+  border: 1.5px solid #d0d0d0;
+  border-radius: 8px;
+  box-shadow: none;
+  transition: box-shadow 0.1s;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.cake-card:hover {
+  box-shadow: 0 2px 8px rgba(255, 153, 51, 0.15);
+}
+.cake-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+.cake-info {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cake-price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #212121;
+  margin-top: 2px;
+}
+.buy-btn-2 {
+  background-color: #fa9905;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0px 9px 0px 9px;
+  font-size: 0.81rem;
+  font-weight: 500;
+  border: none;
+  margin-right: 7px;
+  margin-bottom: 3px;
+  height: 26px;
+  line-height: 19px;
+  letter-spacing: -0.1px;
+  box-shadow: 0 1px 1.5px #ffdfb7;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5px;
+  transition: background 0.18s;
+}
+.buy-btn-2:hover {
+  background: #ec8800;
+  color: #fff;
+}
+.see-more-btn {
+  border-radius: 22px;
+  border: 1.5px solid #444;
+  padding: 3px 25px;
+  font-size: 1rem;
+  background: #fff;
+  color: #222;
+  margin-top: 12px;
+  transition: background 0.2s, color 0.2s;
+}
+.see-more-btn:hover {
+  background: #f3f3f3;
+}
+/* Món ăn thứ 5 */
+
+.section5-header {
+  margin-left: 7px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+}
+
+.section5-header .label {
+  color: #fa9905;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+  display: inline-block;
+  letter-spacing: 0.1px;
+}
+.section5-header .line {
+  border-bottom: 2.5px solid #fa9905;
+  width: 85px;
+  margin: 0 0 5px 7px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.section5-header .title {
+  font-size: 1.22rem;
+  font-weight: 600;
+  color: #232323;
+  padding-left: 0.5px;
+  margin-bottom: 0;
+  margin-top: 2px;
+}
+
+.custom-card5 {
+  border-radius: 13px;
+  box-shadow: 0 2px 16px #fa990520, 0 1.5px 3px #e2e4ec1c;
+  border: 1.5px solid #3c3c3c8f;
+  overflow: hidden;
+  min-height: 350px;
+  background: #fff;
+  transition: box-shadow 0.18s, transform 0.16s, border-color 0.18s;
+}
+.custom-card5:hover {
+  box-shadow: 0 8px 34px 1.5px #fa990553, 0 2px 6px #e2e4ec3c;
+  transform: translateY(-3px) scale(1.012);
+  border-color: #ffd898;
+}
+.card5-img-top {
+  object-fit: cover;
+  height: 230px;
+  border-bottom: 1px solid #ffe3d0;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0px;
+  border-radius: 5px 5px 0px 0px;
+}
+.card-body5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 110px;
+}
+.buy-btn {
+  background-color: #fa9905;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0px 9px 0px 9px;
+  font-size: 0.81rem;
+  font-weight: 500;
+  border: none;
+  margin-right: 7px;
+  margin-bottom: 3px;
+  height: 26px;
+  line-height: 19px;
+  letter-spacing: -0.1px;
+  box-shadow: 0 1px 1.5px #ffdfb7;
+  display: inline-flex;
+  align-items: center;
+  gap: 2.5px;
+  transition: background 0.18s;
+}
+.buy-btn i {
+  font-size: 0.99rem;
+  margin-left: 2.7px;
+  margin-bottom: 1.6px;
+}
+.buy-btn:hover {
+  background: #ffba36;
+  color: #fff;
+}
+.people-icon {
+  color: #fa9905;
+  font-size: 1.05rem;
+  margin-right: 4px;
+}
+.price {
+  font-weight: 600;
+  font-size: 1.04rem;
+  color: #222;
+  letter-spacing: 0.2px;
+}
+
+/* Responsive adjustments */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .carousel-inner .carousel-item > .row > .col-md-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  /*demo banner quang cao dia chi*/
+  .img-inner-grid {
+    max-width: 200px;
+    min-width: 120px;
+  }
+  .big-title {
+    font-size: 1.2rem;
+  }
+
+  .card-item:nth-child(n + 7) {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar-toggler {
+    padding-left: 0;
+  }
+
+  .top-banner {
+    font-size: 12px;
+  }
+
+  .logo-title {
+    font-size: 14px;
+  }
+
+  .logo-subtitle {
+    font-size: 16px;
+  }
+
+  .action-button span {
+    display: none;
+  }
+
+  .action-button i {
+    font-size: 18px;
+  }
+
+  .search-group {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-group .form-control {
+    font-size: 14px;
+    padding: 6px 10px;
+    height: 38px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  .search-group .btn-search {
+    height: 38px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .carousel-inner .carousel-item > .row > .col-md-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .section-header {
+    margin-left: 3px;
+    margin-bottom: 10px;
+    margin-top: 4px;
+  }
+  .custom-card {
+    min-height: 285px;
+  }
+  .card-img-top {
+    height: 200px;
+  }
+  .card-body {
+    height: 120px;
+  }
+  .carousel-controls-custom {
+    top: 39%;
+    left: -11px;
+    right: -11px;
+    width: calc(100% + 22px);
+  }
+  /*demo banner quang cao dia chi*/
+
+  .img-wrap-box {
+    margin-bottom: 18px;
+  }
+  .img-inner-grid {
+    width: 100%;
+    min-width: 0;
+    max-width: 100vw;
+    aspect-ratio: 220/170;
+    gap: 5px;
+  }
+  /* Mobile: show 4 card (2x2), ẩn card từ số 5 trở đi */
+  .card-item:nth-child(n + 5) {
+    display: none !important;
+  }
+}
