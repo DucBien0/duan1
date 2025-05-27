@@ -1052,9 +1052,8 @@ body {
 
 /* Footer DBT */
 .footer-dbt {
-  background: #f3f3f3;
+  background: #d9d9d9;
   font-size: 14px;
-  border-radius: 8px;
 }
 .footer-dbt .footer-title {
   font-weight: 600;
@@ -1062,7 +1061,7 @@ body {
   margin-bottom: 2px;
 }
 .footer-dbt .footer-list {
-  color: #888;
+  color: #555;
   font-size: 13px;
   line-height: 1.3;
 }
